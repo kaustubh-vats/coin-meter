@@ -27,17 +27,24 @@ $(document).ready(async function(){
         name.style.color = data.color;
         price.style.color = data.color;
         price.innerHTML = '&#8377; ' + (Number.parseFloat(data.price) * rate);
-        if(Number.parseFloat(data.change) > 0){
-            change.innerHTML = '&#8593; ' + data.change;
-            change.style.color = 'green';
+        if(Number.parseFloat(data.change) < 0){
+            change.innerHTML = '&#9660; ' + data.change;
+            change.style.color = 'red';
         }
         else{
-            change.innerHTML = '&#8595; ' + data.change;
-            change.style.color = 'red';
+            change.innerHTML = '&#9650; ' + data.change;
+            change.style.color = 'green';
         }
         alltimehigh.innerHTML = 'All time high: &#8377 ' + (Number.parseFloat(data.allTimeHigh.price) * rate);
         dateofAlltimehigh.innerHTML = new Date(data.allTimeHigh.timestamp).toDateString();
         marketCap.innerHTML = 'Market Cap: &#8377 ' + (Number.parseFloat(data.marketCap) * rate);
+        console.log(data.websiteUrl);
+        if(data.websiteUrl != null && data.websiteUrl != ''){
+            website.innerHTML = "Website";
+            website.setAttribute('href', data.websiteUrl);
+        } else{
+            website.style.display = 'none';
+        }
         website.setAttribute('href', data.websiteUrl);
         description.innerHTML = data.description;
         let plotarray = data.sparkline.map(function(item){

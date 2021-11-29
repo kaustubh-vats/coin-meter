@@ -1,6 +1,7 @@
 .main{
     height: calc(100vh - 80px);
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     position: relative;
 }
 .spaceDiv{
@@ -33,6 +34,9 @@ body{
 .anchor-coin{
     text-decoration: none;
     color: black;
+}
+.coin-list-item:hover{
+    transform: scale(1.1);
 }
 .current-situation{
     display: flex;

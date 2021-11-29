@@ -33,18 +33,15 @@ $(document).ready(async function(){
             coinPrice.innerHTML = '&#8377;' + (Number(element.price) * rate);
             let currentSituation = document.createElement('div');
             currentSituation.setAttribute('class', 'current-situation');
-            let icon = document.createElement('i');
+            let h3 = document.createElement('h3');
             if(Number.parseFloat(element.change)<0){
-                icon.setAttribute('class', 'fas fa-arrow-down');
+                h3.innerHTML = '&#9660; '+ element.change;
                 currentSituation.style.color = 'red';
             }
             else {
-                icon.setAttribute('class', 'fas fa-arrow-up');
+                h3.innerHTML = '&#9650; '+ element.change;
                 currentSituation.style.color = 'green';
             }
-            let h3 = document.createElement('h3');
-            h3.innerHTML = element.change;
-            currentSituation.appendChild(icon);
             currentSituation.appendChild(h3);
             coinListItem.appendChild(coinImage);
             coinListItem.appendChild(coinName);

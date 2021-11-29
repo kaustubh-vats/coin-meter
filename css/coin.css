@@ -1,6 +1,10 @@
 .main{
     padding: 80px;
 }
+body{
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #EEF4FD, #FFFFFF);
+}
 .chart-container{
     position: relative; 
     width: 60vw;
