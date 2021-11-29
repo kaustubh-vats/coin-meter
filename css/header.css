@@ -34,3 +34,74 @@ body{
 .nav-ul li a:hover{
     color: #3742fa;
 }
+.burger{
+    cursor: pointer;
+    display: none;
+    z-index: 3;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+    border-radius: 50px;
+    transition: all 0.5s ease;
+}
+@media screen and (max-width: 1024px){
+    .nav-ul{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 768px){
+    .burger{
+        display: block;
+    }
+    .nav-ul{
+        position: fixed;
+        right: 0px;
+        top: 0px;
+        margin: 0;
+        height: 100vh;
+        z-index: 1;
+        background: #3742fa;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 70vw;
+        transform: translateX(200%);
+        border-radius: 10px 0px 0px 10px;
+    }
+    .nav-ul li{
+        opacity: 0;
+    }
+    .nav-ul li a{
+        color: aliceblue;
+    }
+}
+.nav-active{
+    overflow: hidden;
+    transition: transform 0.5s ease-in;
+    transform: translateX(0%);
+}
+.toggle .line1{
+    background-color: aliceblue;
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    background-color: aliceblue;
+    transform: rotate(45deg) translate(-5px,-6px); 
+}
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}

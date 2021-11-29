@@ -86,3 +86,9 @@ body{
     font-size: 16px;
     color: #3742fa;
 }
+@media screen and (max-width: 600px){
+    .coin-list-item{
+        padding: 20px;
+        flex-direction: column;
+    }
+}

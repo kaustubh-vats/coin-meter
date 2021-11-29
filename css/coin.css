@@ -46,3 +46,46 @@ body{
     font-size: 20px;
     margin: 20px;
 }
+@media screen and (max-width: 912px){
+    .chart-container{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .info{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 768px){
+    .chart-container{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .info{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 704px){
+    #name{
+        font-size: 2rem;
+    }
+    #price{
+        font-size: 1.5rem;
+        text-align: center;
+        width: 100%;
+    }
+    .header-head{
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 624px){
+    .info h1{
+        font-size: 12px;
+    }
+    .main{
+        padding: 20px;
+        padding-top: 80px;
+    }
+}
+    

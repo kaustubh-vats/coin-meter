@@ -42,12 +42,12 @@ $(document).ready(async function(){
             coinData.appendChild(symbolImg);    
             coinData.appendChild(coindataHead);
             coinData.appendChild(priceData);
-            card.appendChild(coinData);
             if(i!=data.length-1){
                 let divider = document.createElement('div');
                 divider.setAttribute('class', 'line-separator');
-                card.appendChild(divider);
+                coinData.appendChild(divider);
             }
+            card.appendChild(coinData);
         }
     });
 });
