@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Meter</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/coin.css">
+</head>
+<body>
+    <nav class="header">
+        <h1>CoinMeter</h1>
+        <ul class="nav-ul">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="allcoins.html">Coins</a></li>
+            <li><a target="_blank" href="https://kaustubhvats-portfolio.netlify.app/">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="main">
+        <div class="head">
+            <div class="header-head">
+                <img src="assets/img1.png" alt="coin logo" id="coinIcon"/>
+                <h1 id="name">Coin name - Coin Symbol</h1>
+            </div>
+            <h1 id="price">Price</h1>
+        </div>
+        <div class="info">
+            <h1 id="current-situation">
+                ⯆ -0.17
+            </h1>
+            <h1 id="all-time-high">All time high: </h3>
+            <h1 id="all-time-high-timestamp">Date of All time high: </h3>
+            <h1 id="market-cap">Market Cap: </h3>
+            <h1><a id="website" href="#" target="_blank">Website</a></h1>
+        </div>
+        
+        <div class="chart-container">
+            <canvas id="myChart"></canvas>
+        </div>
+        <div id='description'>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, earum possimus dolorem asperiores cum reiciendis ratione perferendis dicta ut commodi, officiis at! Libero odit qui ullam veniam molestias omnis temporibus, quibusdam maiores? Odit, molestiae.
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js" integrity="sha512-GMGzUEevhWh8Tc/njS0bDpwgxdCJLQBWG3Z2Ct+JGOpVnEmjvNx6ts4v6A2XJf1HOrtOsfhv3hBKpK9kE5z8AQ==" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/coin.js"></script>
+</body>
+</html>

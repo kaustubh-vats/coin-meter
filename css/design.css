@@ -1,0 +1,116 @@
+.container{
+    background: linear-gradient(to bottom, #EEF4FD, #FFFFFF);
+    display: flex;
+    height: 90vh;
+    justify-content: space-around;
+    align-items: center;
+}
+.header_desc{
+    flex: 1;
+    padding: 32px 72px;
+}
+.header_img{
+    flex: 1;
+}
+.header_heading{
+    color: #2d3748;
+    font-size: 34px;
+    font-weight: 700;
+    width: 100%;
+}
+.header_subheading{
+    color: #718096;
+    font-size: 18px;
+    margin-top: 24px;
+    text-align: left;
+    width: 100%;
+}
+.header_img img{
+    width: 500px;
+}
+.button{
+    background: #3742fa;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 35px;
+    outline: 0;
+    width: 120px;
+    margin: 20px 0px;
+}
+.button a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.display-card{
+    width: 85vw;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    margin: auto;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.whycrypto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+}
+.whycrypto-img img{
+    width: 30vw;
+}
+.whycrypto-desc{
+    flex: 1;
+    padding: 32px 90px 32px 10px;
+}
+.whycrypto-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.line-separator{
+    margin: 20px;
+    width: 1px;
+    border-radius: 50%;
+    background: #718096;
+    height: 80px;
+}
+.array-of-coins{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.coin-data-head{
+    width: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.current-situation {
+    display: flex;
+    align-items: center;
+    color: red;
+    margin: 2px;
+}
+.current-situation h3{
+    margin: 2px;
+    font-size: 15px;
+}
+.coin-name{
+    color: #a0aec0;
+    font-size: 15px;
+    margin: 2px;
+}
+.price-data{
+    color: #4a5568;
+    font-size: 18px;
+    font-weight: 400;
+}
+.symbol-icon{
+    width: 30px;
+}

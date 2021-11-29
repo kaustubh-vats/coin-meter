@@ -1,0 +1,44 @@
+.main{
+    padding: 80px;
+}
+.chart-container{
+    position: relative; 
+    width: 60vw;
+    margin: 50px auto;
+}
+.header-head{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#name{
+    margin: 0px 30px;
+    font-size: 3em;
+}
+#price{
+    margin: 30px 30px;
+    font-size: 2.7em;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+#coinIcon{
+    width: 100px;
+}
+.info{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.info h1{
+    font-size: 1.2em;
+}
+#description{
+    font-size: 20px;
+    margin: 20px;
+}
