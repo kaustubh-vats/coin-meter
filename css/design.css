@@ -2,8 +2,10 @@
     background: linear-gradient(to bottom, #EEF4FD, #FFFFFF);
     display: flex;
     height: 90vh;
+    width: 100vw;
     justify-content: space-around;
     align-items: center;
+    overflow-x: hidden;
 }
 .header_desc{
     flex: 1;
