@@ -1,4 +1,6 @@
+var loader;
 $(document).ready(async function(){
+    var loader = document.querySelector('.loader-container');
     let url = 'https://free.currconv.com/api/v7/convert?q=USD_INR&compact=ultra&apiKey=410ac1faa58c9dce544c';
     let response1 = await fetch(url);
     let data1 = await response1.json();
@@ -14,6 +16,7 @@ $(document).ready(async function(){
     }).then(function(response){
         return response.json();
     }).then(async function(data) {
+        loader.style.display = 'none';
         for(let i=0; i<data.length; i++){
             let element = data[i];
             let anchor = document.createElement('a');
@@ -54,6 +57,8 @@ $(document).ready(async function(){
     });
 });
 async function getCoinSearched(){
+    loader = document.querySelector('.loader-container');
+    loader.style.display = 'flex';
     let url = 'https://free.currconv.com/api/v7/convert?q=USD_INR&compact=ultra&apiKey=410ac1faa58c9dce544c';
     let response1 = await fetch(url);
     let data1 = await response1.json();
@@ -73,6 +78,7 @@ async function getCoinSearched(){
     }).then(function(response){
         return response.json();
     }).then(async function(data) {
+        loader.style.display = 'none';
         for(let i=0; i<data.length; i++){
             let element = data[i];
             let anchor = document.createElement('a');
@@ -90,7 +96,6 @@ async function getCoinSearched(){
             let coinPrice = document.createElement('h3');
             coinPrice.setAttribute('class', 'price');
             coinPrice.innerHTML = '&#8377;' + (Number(element.price) * rate);
-            
             coinListItem.appendChild(coinImage);
             coinListItem.appendChild(coinName);
             coinListItem.appendChild(coinPrice);

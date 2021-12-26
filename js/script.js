@@ -1,5 +1,5 @@
-
 $(document).ready(async function(){
+    var loader = document.querySelector('.loader-container');
     let url = 'https://free.currconv.com/api/v7/convert?q=USD_INR&compact=ultra&apiKey=410ac1faa58c9dce544c';
     let response1 = await fetch(url);
     let data1 = await response1.json();
@@ -10,6 +10,7 @@ $(document).ready(async function(){
     }).then(function(response){
         return response.json();
     }).then(async function(data) {
+        loader.style.display = 'none';
         for(let i=0; i<data.length; i++){
             let element = data[i];
             let coinData = document.createElement('div');
