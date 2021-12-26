@@ -48,7 +48,11 @@ $(document).ready(async function(){
                 divider.setAttribute('class', 'line-separator');
                 coinData.appendChild(divider);
             }
-            card.appendChild(coinData);
+            let anchor = document.createElement('a');
+            anchor.setAttribute('href', '/coin.html?uuid='+element.uuid);
+            anchor.setAttribute('class', 'coin-anchor');
+            anchor.appendChild(coinData);
+            card.appendChild(anchor);
         }
     });
 });

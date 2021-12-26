@@ -64,6 +64,7 @@ $(document).ready(async function(){
                 }]
             },
             options: {
+                responsive: true,
                     transitions: {
                         show: {
                         animations: {

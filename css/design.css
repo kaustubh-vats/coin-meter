@@ -125,6 +125,10 @@
     margin: 10px;
     position: relative;
 }
+.coin-anchor{
+    text-decoration: none;
+    color: inherit;
+}
 @media screen and (max-width: 920px){
     .container{
         flex-direction: column;
