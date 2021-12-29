@@ -17,5 +17,5 @@ const navSlide = () =>{
 window.addEventListener('scroll',()=>{
     const header = document.querySelector('.header');
     header.classList.toggle('header-scrolled',window.scrollY > 30);
-})
+});
 navSlide();
