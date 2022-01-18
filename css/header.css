@@ -42,7 +42,7 @@ body{
 .burger div{
     width: 25px;
     height: 3px;
-    background-color: black;
+    background-color: var(--text-color-normal);
     margin: 5px;
     border-radius: 50px;
     transition: all 0.5s ease;
@@ -63,7 +63,7 @@ body{
         margin: 0;
         height: 100vh;
         z-index: 1;
-        background: #3742fa;
+        background: var(--responsive-nav-color);
         display: flex;
         flex-direction: column;
         align-items: center;

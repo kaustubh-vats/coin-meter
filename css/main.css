@@ -8,6 +8,7 @@
     --header-color-scrolled: #EEF4FD;
     --header-color-shadow: linear-gradient(to bottom, #EEF4FD, transparent);
     --loader-border-color: #E4E6F0;
+    --responsive-nav-color: #3742fa;
 }
 body.dark-theme{
     /*colors*/
@@ -19,4 +20,5 @@ body.dark-theme{
     --header-color-scrolled: rgb(33, 36, 41);
     --header-color-shadow: linear-gradient(to bottom, rgb(33, 36, 41), transparent);
     --loader-border-color: rgb(48, 51, 58);
+    --responsive-nav-color: rgb(33, 36, 41);
 }
