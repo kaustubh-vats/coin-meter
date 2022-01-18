@@ -3,7 +3,17 @@
 }
 body{
     min-height: 100vh;
-    background: linear-gradient(to bottom, #EEF4FD, #FFFFFF);
+    background: var(--background-col);
+}
+body::after{
+    background: var(--container-grad);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    content: '';
 }
 .chart-container{
     position: relative; 
@@ -45,6 +55,10 @@ body{
 #description{
     font-size: 20px;
     margin: 20px;
+    color: var(--text-color-normal);
+}
+.text{
+    color: var(--text-color-normal);
 }
 @media screen and (max-width: 912px){
     .chart-container{

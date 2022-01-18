@@ -1,11 +1,14 @@
 .container{
-    background: linear-gradient(to bottom, #EEF4FD, #FFFFFF);
+    background: var(--container-grad);
     display: flex;
     height: 90vh;
     width: 100vw;
     justify-content: space-around;
     align-items: center;
     overflow-x: hidden;
+}
+body{
+    background: var(--background-col);
 }
 .header_desc{
     flex: 1;
@@ -15,7 +18,7 @@
     flex: 1;
 }
 .header_heading{
-    color: #2d3748;
+    color: var(--text-color-headings);
     font-size: 34px;
     font-weight: 700;
     width: 100%;
@@ -47,7 +50,7 @@
 }
 .display-card{
     width: 85vw;
-    background: #FFFFFF;
+    background: var(--card-color);
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
     margin: auto;
     padding: 10px 20px;

@@ -40,7 +40,6 @@ $(document).ready(async function(){
         alltimehigh.innerHTML = 'All time high: &#8377 ' + (Number.parseFloat(data.allTimeHigh.price) * rate);
         dateofAlltimehigh.innerHTML = new Date(data.allTimeHigh.timestamp * 1000).toDateString();
         marketCap.innerHTML = 'Market Cap: &#8377 ' + (Number.parseFloat(data.marketCap) * rate);
-        console.log(data.websiteUrl);
         if(data.websiteUrl != null && data.websiteUrl != ''){
             website.innerHTML = "Website";
             website.setAttribute('href', data.websiteUrl);

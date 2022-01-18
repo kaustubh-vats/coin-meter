@@ -1,0 +1,22 @@
+:root{
+    /* colors */
+    --card-color: white;
+    --background-col: white;
+    --container-grad: linear-gradient(to bottom, #EEF4FD, #FFFFFF);
+    --text-color-headings: #2d3748;
+    --text-color-normal: black; 
+    --header-color-scrolled: #EEF4FD;
+    --header-color-shadow: linear-gradient(to bottom, #EEF4FD, transparent);
+    --loader-border-color: #E4E6F0;
+}
+body.dark-theme{
+    /*colors*/
+    --card-color: #191B1F;
+    --background-col: rgb(33, 36, 41);
+    --container-grad: radial-gradient(50% 50% at 50% 50%,#078efc10 0,rgba(255,255,255,0) 100%);
+    --text-color-headings: #b8c2d3;
+    --text-color-normal: white;
+    --header-color-scrolled: rgb(33, 36, 41);
+    --header-color-shadow: linear-gradient(to bottom, rgb(33, 36, 41), transparent);
+    --loader-border-color: rgb(48, 51, 58);
+}

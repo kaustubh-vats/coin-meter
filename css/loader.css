@@ -11,7 +11,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: var(--background-col);
 }
 .loader-text-div{
     font-size: 20px;
@@ -55,7 +55,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #E4E6F0;
+    background-color: var(--loader-border-color);
     transition: 1.5s;
     animation: loader-enlarge 2s ease-in-out infinite;
 }
@@ -78,7 +78,7 @@ body{
     position: absolute;
     height: 250px;
     width: 250px;
-    background: white;
+    background: var(--background-col);
     top: 50%;
     left: 50%;
     transition: 0.3s;

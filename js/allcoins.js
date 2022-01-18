@@ -90,7 +90,7 @@ async function getCoinSearched(){
             coinImage.setAttribute('class', 'icon-img');
             coinImage.setAttribute('src', element.iconUrl);
             let coinName = document.createElement('h3');
-            coinName.setAttribute('class', 'coin-name');
+            coinName.setAttribute('class', 'coin-name default-color-name');
             coinName.style.color = element.color;
             coinName.innerHTML = element.name + " " + element.symbol;
             let coinPrice = document.createElement('h3');
