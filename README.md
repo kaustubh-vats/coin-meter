@@ -21,7 +21,7 @@ A Website to get real-time data of cryptocurrencies with a nice user interface, 
 + ```git clone https://github.com/kaustubh-vats/coin-meter.git```
 + ```pip install flask```
 + ```pip install flask-cors```
-+ Run the ```app.py`` file
++ Run the ```app.py``` file
 + ```Python -m http.server``` (Or any other local server, not the flask server)
 + In your browser ```127.0.0.1:#port``` (Port by your local server, not the flask server)
 
