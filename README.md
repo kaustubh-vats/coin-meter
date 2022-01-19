@@ -27,7 +27,7 @@ A Website to get real-time data of cryptocurrencies with a nice user interface, 
 
 # API USED
 + [CoinRanking](https://developers.coinranking.com/api)
-+ [FreeCurrencyConverterAPI](https://free.currencyconverterapi.com/)
++ [free currencyapi](https://freecurrencyapi.net/)
 
 # LIBRARY USED
 + [Chart.js](https://www.chartjs.org/)
