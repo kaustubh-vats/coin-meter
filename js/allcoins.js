@@ -1,10 +1,10 @@
 var loader;
 $(document).ready(async function(){
     var loader = document.querySelector('.loader-container');
-    let url = 'https://free.currconv.com/api/v7/convert?q=USD_INR&compact=ultra&apiKey=410ac1faa58c9dce544c';
+    let url = 'https://freecurrencyapi.net/api/v2/latest?apikey=5d173b10-7911-11ec-b83e-efbbd017dc52';
     let response1 = await fetch(url);
     let data1 = await response1.json();
-    let rate = data1.USD_INR;
+    let rate = data1.data.INR;
     var maincard = document.querySelector('.main');
     var cardPrev = document.querySelector('.allcoins');
     maincard.removeChild(cardPrev);
@@ -59,10 +59,10 @@ $(document).ready(async function(){
 async function getCoinSearched(){
     loader = document.querySelector('.loader-container');
     loader.style.display = 'flex';
-    let url = 'https://free.currconv.com/api/v7/convert?q=USD_INR&compact=ultra&apiKey=410ac1faa58c9dce544c';
+    let url = 'https://freecurrencyapi.net/api/v2/latest?apikey=5d173b10-7911-11ec-b83e-efbbd017dc52';
     let response1 = await fetch(url);
     let data1 = await response1.json();
-    let rate = data1.USD_INR;
+    let rate = data1.data.INR;
     var maincard = document.querySelector('.main');
     var cardPrev = document.querySelector('.allcoins');
     maincard.removeChild(cardPrev);

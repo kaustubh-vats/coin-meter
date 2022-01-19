@@ -78,6 +78,9 @@ body{
     .nav-ul li a{
         color: aliceblue;
     }
+    .theme-btn{
+        color: aliceblue;
+    }
 }
 .nav-active{
     overflow: hidden;
