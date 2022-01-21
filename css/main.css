@@ -14,7 +14,7 @@ body.dark-theme{
     /*colors*/
     --card-color: #191B1F;
     --background-col: rgb(33, 36, 41);
-    --container-grad: radial-gradient(50% 50% at 50% 50%,#078efc10 0,rgba(255,255,255,0) 100%);
+    --container-grad: radial-gradient(50% 50% at 50% 50%,#008cff54 0,rgba(255,255,255,0) 100%);
     --text-color-headings: #b8c2d3;
     --text-color-normal: white;
     --header-color-scrolled: rgb(33, 36, 41);
