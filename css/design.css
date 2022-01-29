@@ -35,6 +35,7 @@ body{
 }
 .button{
     background: #3742fa;
+    color: aliceblue;
     border: none;
     border-radius: 5px;
     cursor: pointer;
