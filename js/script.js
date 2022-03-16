@@ -1,6 +1,6 @@
 $(document).ready(async function(){
     var loader = document.querySelector('.loader-container');
-    let url = 'https://freecurrencyapi.net/api/v2/latest?apikey=5d173b10-7911-11ec-b83e-efbbd017dc52';
+    let url = 'https://api.currencyapi.com/v3/latest?apikey=5d173b10-7911-11ec-b83e-efbbd017dc52';
     let response1 = await fetch(url);
     let data1 = await response1.json();
     let rate = data1.data.INR;
