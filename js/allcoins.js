@@ -1,10 +1,10 @@
 var loader;
 $(document).ready(async function(){
     var loader = document.querySelector('.loader-container');
-    let url = 'https://api.currencyapi.com/v3/latest?apikey=5d173b10-7911-11ec-b83e-efbbd017dc52';
+    let url = 'https://api.currencyapi.com/v3/convert?apikey=5d173b10-7911-11ec-b83e-efbbd017dc52&date=2022-03-15&value=1&currencies=INR';
     let response1 = await fetch(url);
     let data1 = await response1.json();
-    let rate = data1.data.INR;
+    let rate = data1.data.INR.value;
     var maincard = document.querySelector('.main');
     var cardPrev = document.querySelector('.allcoins');
     maincard.removeChild(cardPrev);
@@ -59,10 +59,10 @@ $(document).ready(async function(){
 async function getCoinSearched(){
     loader = document.querySelector('.loader-container');
     loader.style.display = 'flex';
-    let url = 'https://api.currencyapi.com/v3/latest?apikey=5d173b10-7911-11ec-b83e-efbbd017dc52';
+    let url = 'https://api.currencyapi.com/v3/convert?apikey=5d173b10-7911-11ec-b83e-efbbd017dc52&date=2022-03-15&value=1&currencies=INR';
     let response1 = await fetch(url);
     let data1 = await response1.json();
-    let rate = data1.data.INR;
+    let rate = data1.data.INR.value;
     var maincard = document.querySelector('.main');
     var cardPrev = document.querySelector('.allcoins');
     maincard.removeChild(cardPrev);
